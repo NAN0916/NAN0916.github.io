@@ -264,7 +264,7 @@
               
                 
                 <a class="post-title-link" href="/2017/01/24/HTML5CSS3第三天/" itemprop="url">
-                  未命名
+                  HTML5css3基础（三）
                 </a>
               
             
@@ -317,27 +317,20 @@
 
       
         
-          
-            <p>#HTML5CSS3第三天</p>
-<p>##渐变</p>
-<ul>
+          <h1 id="HTML5CSS3第三天"><a href="#HTML5CSS3第三天" class="headerlink" title="HTML5CSS3第三天"></a>HTML5CSS3第三天</h1><h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><ul>
 <li>给需要的元素设置图片属性（background或者background-image）</li>
 <li>渐变在谷歌浏览器中，过度效果不全部支持，也就是说设置了渐变，设置了transition想实现渐变     颜色的变化效果，在谷歌中是不起作用的</li>
 <li>但是在ie中支持过度效果，不过在实际开发中不会这样写</li>
 </ul>
-<p>###渐变的分类</p>
-<p>####1.0线性渐变（朝着某个方向反向渐变）<br><strong>说明</strong>：径向渐变是反向渐变，设置的红色到白色，显示出来就是白色到红色<br><strong>语法</strong>： background-image: linear-gradient(角度/to 方向,颜色1，颜色2，颜色3…);<img src="img\back-all.png" alt="back-all"></p>
-<p><strong>第一个参数</strong>可以是角度加单位deg,也可以是方向to left ,to right,to top,to bottom,<br><strong>后面的参数</strong>表示颜色，支持%和像素，可以是多个颜色。<br><strong>颜色1+ 范围</strong>   表示该颜色  从0开始 直到 某个值<br><strong>颜色2+ 范围</strong>   表示改颜色 从 某个值 开始<br><strong>颜色2+ 范围</strong>   表示该颜色 到某个值 结束<br><img src="img\one.png" alt="one"></p>
-<p>####2.0径向渐变（圆形或者椭圆）<br><strong>语法</strong>： background: radial-gradient(半径1  半径2   at 方向,颜色1 ,颜色2，…);<br><strong>半径</strong>:如果只设置一个就是圆，如果设置两个就表示椭圆，但是如果半径1和半径2一样，那么也是圆<br><img src="img\two.jpg" alt="two"><br><strong>方向</strong>：可以是坐标  也是可以具体的方向 <img src="img\to.jpg" alt="to"></p>
-<p>##background新属性</p>
-<p>###background-size:（设置背景图片的大小）具体大小 corver contain<br><strong>说明</strong>：可以是具体的大小或者corver或者contain<br>   background-size: <strong>300px 300px;</strong><br>   background-size: <strong>cover</strong>: 等比例放大 直到两边都顶格,如果图片由于比例问题,出现超出范围的情况, 会出现图片       缺失的问题。出去的图片会被切掉。<br>​    background-size:  <strong>contain</strong>  等比例放大 某一边顶格 立刻停止放大<br><img src="img\liyf.jpg" alt="liyf"></p>
-<p>###background-origin：（背景图开始的位置）border-box/content-box/padding-box<br>background-origin: <strong>border-box</strong>;  从边框的位置开始<br>background-origin: <strong>content-box</strong>;  从padding里面开始<br>background-origin: <strong>padding-box</strong>; 从padding开始<br> <img src="img\origin.jpg" alt="origin"></p>
-<p>###background联写<br><strong>语法</strong>： background: 图片 repeat 位置 /大小 origin<br><strong>注意</strong>：在css3中支持设置多个背景，但是一般会在 末尾设置一个 背景颜色，当图片加载不出来 或者由于网速 ，需要等待才会出现时，起码让用户看到一个 颜色，提升用户体验。<br><img src="img\for.png" alt="for"></p>
-<p>###相框属性<br><strong>说明</strong>：添加相框属性，兼容性较差，实际开发的时候为了保证，用户起码有一个 最基本的相框<br>会先设置一个 border属性 ， 如果不设置border属性 ，那么就无法使用图片相框，当浏览器不支持 border-image属性时 ，会使用默认的相框来显示<br><strong>border-image-source</strong>: url(‘img/border_box.png’); 设置边框的图片地址<br><strong>border-image-slice</strong>: 27 27; 设置图片的切割的尺寸<br><strong>border-image-width</strong>:宽度<br><strong>border-image-repeat</strong>:   (图片的拉伸方式) stretch/round/repeat<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">border-image-repeat:stretch;(默认) 直接拉伸图片会失真</div><div class="line">border-image-repeat:round;可以设置为 round 平铺，会考虑图片完整性，配合slice使用，首先固定四角,让其他部分按照设置的slice大小裁剪平铺</div><div class="line">border-image-repeat:repeat; repeat 只是复制粘贴，可能出现缺角的情况</div></pre></td></tr></table></figure></p>
-<p><img src="img\repeat.jpg" alt="repeat"></p>
-<p><strong>注意</strong>：如果设置repeat不设置slice相框会出现在四周<br><img src="img\width.jpg" alt="width"></p>
-
-          
+<h3 id="渐变的分类"><a href="#渐变的分类" class="headerlink" title="渐变的分类"></a>渐变的分类</h3><h4 id="1-0线性渐变（朝着某个方向反向渐变）"><a href="#1-0线性渐变（朝着某个方向反向渐变）" class="headerlink" title="1.0线性渐变（朝着某个方向反向渐变）"></a>1.0线性渐变（朝着某个方向反向渐变）</h4><p><strong>说明</strong>：径向渐变是反向渐变，设置的红色到白色，显示出来就是白色到红色<br><strong>语法</strong>： background-image: linear-gradient(角度/to 方向,颜色1，颜色2，颜色3…);<img src="img/back-all.png" alt="back-all"></p>
+<p><strong>第一个参数</strong>可以是角度加单位deg,也可以是方向to left ,to right,to top,to bottom,<br><strong>后面的参数</strong>表示颜色，支持%和像素，可以是多个颜色。<br><strong>颜色1+ 范围</strong>   表示该颜色  从0开始 直到 某个值<br><strong>颜色2+ 范围</strong>   表示改颜色 从 某个值 开始<br><strong>颜色2+ 范围</strong>   表示该颜色 到某个值 结束<br><img src="img/one.png" alt="one"><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/01/24/HTML5CSS3第三天/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -400,7 +393,7 @@
               
                 
                 <a class="post-title-link" href="/2017/01/18/HTML5CSS3第二天/" itemprop="url">
-                  未命名
+                  HTML5基础（二）
                 </a>
               
             
@@ -530,7 +523,7 @@
               
                 
                 <a class="post-title-link" href="/2017/01/17/HTML5第一天/" itemprop="url">
-                  HTML5基础
+                  HTML5css3基础(一)
                 </a>
               
             
