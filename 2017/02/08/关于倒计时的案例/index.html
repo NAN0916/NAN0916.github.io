@@ -86,23 +86,37 @@
 
 <meta name="description" content="#　倒计时的计算
 
-定义初始倒计时时间  转换成秒var  time=36060;
-设置定时器 每秒时间–1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.floor(time/3600)">
+
+定义初始倒计时时间  转换成秒        
+1var  time=3*60*60;
+
+设置定时器 js代码
+1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.fl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="花园宝宝">
 <meta property="og:url" content="http://yoursite.com/2017/02/08/关于倒计时的案例/index.html">
 <meta property="og:site_name" content="花园宝宝">
 <meta property="og:description" content="#　倒计时的计算
 
-定义初始倒计时时间  转换成秒var  time=36060;
-设置定时器 每秒时间–1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.floor(time/3600)">
-<meta property="og:updated_time" content="2017-02-08T11:37:46.151Z">
+
+定义初始倒计时时间  转换成秒        
+1var  time=3*60*60;
+
+设置定时器 js代码
+1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.fl">
+<meta property="og:image" content="http://yoursite.com/../img/daojishi_one.png">
+<meta property="og:updated_time" content="2017-02-09T03:43:02.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="花园宝宝">
 <meta name="twitter:description" content="#　倒计时的计算
 
-定义初始倒计时时间  转换成秒var  time=36060;
-设置定时器 每秒时间–1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.floor(time/3600)">
+
+定义初始倒计时时间  转换成秒        
+1var  time=3*60*60;
+
+设置定时器 js代码
+1234567891011121314151617181920212223  var timer=setInterval(function () &amp;#123;      time--;      秒转化成小时 1h=3600s       var h=Math.fl">
+<meta name="twitter:image" content="http://yoursite.com/../img/daojishi_one.png">
 
 
 
@@ -325,12 +339,17 @@
 
       
         <p>#　倒计时的计算</p>
+<p><img src="../img/daojishi_one.png" alt="daojishi_one"></p>
 <ul>
-<li>定义初始倒计时时间  转换成秒var  time=3<em>60</em>60;</li>
-<li>设置定时器 每秒时间–<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">  <span class="keyword">var</span> timer=setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      time--;</div><div class="line">      秒转化成小时 <span class="number">1</span>h=<span class="number">3600</span>s </div><div class="line">      <span class="keyword">var</span> h=<span class="built_in">Math</span>.floor(time/<span class="number">3600</span>);</div><div class="line">      秒转化为分钟 转化为分钟后的余数除<span class="number">60</span></div><div class="line">      <span class="keyword">var</span> m=<span class="built_in">Math</span>.floor(time%<span class="number">3600</span>/<span class="number">60</span>);</div><div class="line">      秒转化成两位数除<span class="number">60</span>取余</div><div class="line">      <span class="keyword">var</span> s=<span class="built_in">Math</span>.floor(time%<span class="number">60</span>);</div><div class="line"></div><div class="line">小时，分，秒转化为<span class="number">2</span>位，除<span class="number">10</span>取个位和十位</div><div class="line">      span[<span class="number">0</span>].innerHTML=<span class="built_in">Math</span>.floor(h/<span class="number">10</span>);</div><div class="line">      span[<span class="number">1</span>].innerHTML=h%<span class="number">10</span>;</div><div class="line">      span[<span class="number">3</span>].innerHTML=<span class="built_in">Math</span>.floor(m/<span class="number">10</span>);</div><div class="line">      span[<span class="number">4</span>].innerHTML=m%<span class="number">10</span>;</div><div class="line">      span[<span class="number">6</span>].innerHTML=<span class="built_in">Math</span>.floor(s/<span class="number">10</span>);</div><div class="line">      span[<span class="number">7</span>].innerHTML=s%<span class="number">10</span>;</div><div class="line"></div><div class="line">当时间等于<span class="number">0</span>时，清除定时器</div><div class="line">      <span class="keyword">if</span>(timer==<span class="number">0</span>)</div><div class="line">      &#123;</div><div class="line">          clearInterval(timer);</div><div class="line">      &#125;</div><div class="line">  &#125;,<span class="number">1000</span>);</div></pre></td></tr></table></figure>
+<li><p>定义初始倒计时时间  转换成秒        </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var  time=3*60*60;</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置定时器<br> js代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">  <span class="keyword">var</span> timer=setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      time--;</div><div class="line">      秒转化成小时 <span class="number">1</span>h=<span class="number">3600</span>s </div><div class="line">      <span class="keyword">var</span> h=<span class="built_in">Math</span>.floor(time/<span class="number">3600</span>);</div><div class="line">      秒转化为分钟 转化为分钟后的余数除<span class="number">60</span></div><div class="line">      <span class="keyword">var</span> m=<span class="built_in">Math</span>.floor(time%<span class="number">3600</span>/<span class="number">60</span>);</div><div class="line">      秒转化成两位数除<span class="number">60</span>取余</div><div class="line">      <span class="keyword">var</span> s=<span class="built_in">Math</span>.floor(time%<span class="number">60</span>);</div><div class="line"></div><div class="line">小时，分，秒转化为<span class="number">2</span>位，除<span class="number">10</span>取个位和十位</div><div class="line">      span[<span class="number">0</span>].innerHTML=<span class="built_in">Math</span>.floor(h/<span class="number">10</span>);</div><div class="line">      span[<span class="number">1</span>].innerHTML=h%<span class="number">10</span>;</div><div class="line">      span[<span class="number">3</span>].innerHTML=<span class="built_in">Math</span>.floor(m/<span class="number">10</span>);</div><div class="line">      span[<span class="number">4</span>].innerHTML=m%<span class="number">10</span>;</div><div class="line">      span[<span class="number">6</span>].innerHTML=<span class="built_in">Math</span>.floor(s/<span class="number">10</span>);</div><div class="line">      span[<span class="number">7</span>].innerHTML=s%<span class="number">10</span>;</div><div class="line"></div><div class="line">当时间等于<span class="number">0</span>时，清除定时器</div><div class="line">      <span class="keyword">if</span>(timer==<span class="number">0</span>)</div><div class="line">      &#123;</div><div class="line">          clearInterval(timer);</div><div class="line">      &#125;</div><div class="line">  &#125;,<span class="number">1000</span>);</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>html结构<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                     <span class="tag">&lt;<span class="name">span</span>&gt;</span>0<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">                 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>​    </p>
 
       
     </div>
@@ -366,6 +385,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/09/web移动端-京东静态页面/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -426,7 +449,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
