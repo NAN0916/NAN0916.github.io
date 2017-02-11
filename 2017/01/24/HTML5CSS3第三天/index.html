@@ -103,14 +103,16 @@
 渐变的分类1.0线性渐变（朝着某个方向反向渐变）
 说明：径向渐变是反向渐变，设置的红">
 <meta property="og:image" content="http://yoursite.com/../img/back-all.png">
+<meta property="og:image" content="http://yoursite.com/img/back-all.png">
 <meta property="og:image" content="http://yoursite.com/..\img\one.png">
-<meta property="og:image" content="http://yoursite.com/../img/two.jpg">
-<meta property="og:image" content="http://yoursite.com/..\img\to.jpg">
+<meta property="og:image" content="http://yoursite.com/img/two.jpg">
+<meta property="og:image" content="http://yoursite.com/\img\to.jpg">
 <meta property="og:image" content="http://yoursite.com/img/origin.jpg">
 <meta property="og:image" content="https://github.com/NAN0916/NAN0916.github.io/blob/master/img/for.png">
 <meta property="og:image" content="http://yoursite.com/../../puclic/img/repeat.jpg">
+<meta property="og:image" content="http://yoursite.com/img/repeat.jpg">
 <meta property="og:image" content="https://github.com/NAN0916/NAN0916.github.io/blob/master/img/width.jpg">
-<meta property="og:updated_time" content="2017-02-09T03:26:59.313Z">
+<meta property="og:updated_time" content="2017-02-11T00:41:43.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML5css3基础（三）">
 <meta name="twitter:description" content="HTML5CSS3第三天渐变
@@ -353,7 +355,7 @@
 <li><p><strong>语法</strong>： background-image: linear-gradient(角度/to 方向,颜色1，颜色2，颜色3…);</p>
 </li>
 </ul>
-<p><img src="../img/back-all.png" alt="back-all"></p>
+<p><img src="../img/back-all.png" alt="back-all"><br><img src="img/back-all.png" alt="back-all"></p>
 <ul>
 <li><p><strong>第一个参数</strong>可以是角度加单位deg,也可以是方向to left ,to right,to top,to bottom,</p>
 </li>
@@ -371,10 +373,10 @@
 <h4 id="2-0径向渐变（圆形或者椭圆）"><a href="#2-0径向渐变（圆形或者椭圆）" class="headerlink" title="2.0径向渐变（圆形或者椭圆）"></a>2.0径向渐变（圆形或者椭圆）</h4><ul>
 <li><strong>语法</strong>： background: radial-gradient(半径1  半径2   at 方向,颜色1 ,颜色2，…);</li>
 <li><strong>半径</strong>:如果只设置一个就是圆，如果设置两个就表示椭圆，但是如果半径1和半径2一样，那么也是圆<!--![two](/img/two.jpg)-->
-<img src="../img/two.jpg" alt="two"></li>
+<img src="/img/two.jpg" alt="two"></li>
 <li><p><strong>方向</strong>：可以是坐标  也是可以具体的方向</p>
 </li>
-<li><p><img src="..\img\to.jpg" alt="to"></p>
+<li><p><img src="\img\to.jpg" alt="to"></p>
 </li>
 </ul>
 <h2 id="background新属性"><a href="#background新属性" class="headerlink" title="background新属性"></a>background新属性</h2><h3 id="background-size-（设置背景图片的大小）具体大小-corver-contain"><a href="#background-size-（设置背景图片的大小）具体大小-corver-contain" class="headerlink" title="background-size:（设置背景图片的大小）具体大小 corver contain"></a>background-size:（设置背景图片的大小）具体大小 corver contain</h3><p><strong>说明</strong>：可以是具体的大小或者corver或者contain</p>
@@ -396,7 +398,7 @@
 </li>
 </ul>
 <a href="!--![repeat](https://github.com/NAN0916/NAN0916.github.io/blob/master/img/repeat.jpg)--">!--![repeat](https://github.com/NAN0916/NAN0916.github.io/blob/master/img/repeat.jpg)--</a>
-<p><img src="../../puclic/img/repeat.jpg" alt="repeat"><br><strong>注意</strong>：如果设置repeat不设置slice相框会出现在四周<br><img src="https://github.com/NAN0916/NAN0916.github.io/blob/master/img/width.jpg" alt="width"></p>
+<p><img src="../../puclic/img/repeat.jpg" alt="repeat"><br><img src="/img/repeat.jpg" alt="repeat"><br><strong>注意</strong>：如果设置repeat不设置slice相框会出现在四周<br><img src="https://github.com/NAN0916/NAN0916.github.io/blob/master/img/width.jpg" alt="width"></p>
 <h3 id="transition-过渡"><a href="#transition-过渡" class="headerlink" title="transition 过渡"></a>transition 过渡</h3><ul>
 <li>transition-property: width,height;（要变化的属性）</li>
 <li>transition-duration: 2s;（过渡的时间）</li>
@@ -456,8 +458,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/08/关于倒计时的案例/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/08/关于倒计时的案例/" rel="prev" title="倒计时计算">
+                倒计时计算 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
